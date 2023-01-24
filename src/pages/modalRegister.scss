@@ -1,0 +1,21 @@
+.container {
+    &__modal {
+        height: 100%;
+        width: 100%;
+        margin: 25% auto;
+        display: flex;
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0.61);
+        top: -49%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__contenido{
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 50px 8px gray;
+        width: 70%;
+        height: auto;
+    }
+}
