@@ -6,16 +6,11 @@ import Login from './pages/Login'
 import { useNavigate } from 'react-router-dom'
 
 
-
-
-
-
-
 const App = () => {
 
-  const [usuario, setUsuario] = useState(null)
-  const [loadingUser, setLoadingUser] = useState()
   const navigate = useNavigate()
+  const [usuario, setUsuario] = useState()
+  const [loadingUser, setLoadingUser] = useState()
 
   const usuarioLogin = () => {
     app.auth().onAuthStateChanged((userFirebase) => {
